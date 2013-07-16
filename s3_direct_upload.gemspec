@@ -5,13 +5,13 @@ Gem::Specification.new do |gem|
   gem.authors       = ["Wayne Hoover"]
   gem.email         = ["w@waynehoover.com"]
   gem.description   = %q{Direct Upload to Amazon S3 With CORS and jquery-file-upload}
-  gem.summary       = %q{Gives a form helper for Rails which allows direct uploads to s3. Based on RailsCast#383}
+  gem.summary       = %q{Gives a form helper for Rails which allows direct uploads to s3. Based on RailsCast#383. Makes files private on S3}
   gem.homepage      = ""
 
   gem.files         = Dir["{lib,app}/**/*"] + ["LICENSE", "README.md"]
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
-  gem.name          = "s3_direct_upload"
+  gem.name          = "s3_private_direct_upload"
   gem.require_paths = ["lib"]
   gem.version       = S3DirectUpload::VERSION
 
